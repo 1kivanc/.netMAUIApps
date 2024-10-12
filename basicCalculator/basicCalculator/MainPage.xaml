@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="basicCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            
+            Padding="30,50,30,0"
+            Spacing="25">
+            
+
+            <Entry x:Name="Number1Entry" Placeholder="İlk sayı" />
+            <Entry x:Name="Number2Entry" Placeholder="İkici sayı" />
+
+            <Button
+                x:Name="AddButton"
+                Text="Topla"
+                Clicked="OnAddButtonClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="SubtractButton"
+                Text="Çıkar"
+                Clicked="OnSubtractButtonClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="MultiplyButton"
+                Text="Çarp"
+                Clicked="OnMultiplyButtonClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="DivideButton"
+                Text="Böl"
+                Clicked="OnDivideButtonClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
